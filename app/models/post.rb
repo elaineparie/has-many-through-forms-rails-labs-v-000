@@ -14,6 +14,7 @@ end
 
 def unique_users
   @array = []
+  @username_array = []
 if !self.comments.empty?
 self.comments.each do |comment|
 @array << comment.user
