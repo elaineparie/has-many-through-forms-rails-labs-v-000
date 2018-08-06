@@ -24,7 +24,7 @@
 <%end%>
 
 <%username_array = []%>
-<%@post.comments.collect do |comment|%>
+<%@post.comments.each do |comment|%>
 <%username_array << comment.user.username%>
 <%username_array.uniq%>
 <%binding.pry%>
