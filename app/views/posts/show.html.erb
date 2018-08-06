@@ -23,4 +23,7 @@
 <%end%>
 <%end%>
 
-<%=@post.unique_users%>
+<%@post.comments.collect do |comment|%>
+<%comment.user.username%>
+<%binding.pry%>
+<%end%>
