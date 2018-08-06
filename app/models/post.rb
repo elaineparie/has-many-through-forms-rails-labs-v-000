@@ -19,7 +19,7 @@ if !self.comments.empty?
 self.comments.each do |comment|
 @array << comment.user
 end
-array.each do |user|
+@array.each do |user|
   @username_array << user.username
 binding.pry
 end
