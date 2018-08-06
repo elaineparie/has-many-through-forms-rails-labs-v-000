@@ -21,7 +21,7 @@ array << comment.user
 end
 end
 end
-end
+
 
 
 end
