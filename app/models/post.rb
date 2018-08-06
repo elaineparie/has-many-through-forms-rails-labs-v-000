@@ -12,18 +12,10 @@ class Post < ActiveRecord::Base
   end
 end
 
-def unique_users
-  @array = []
-  @username_array = []
-if !self.comments.empty?
-self.comments.each do |comment|
-@array << comment.user
-end
-@array.each do |user|
-  @username_array << user.username
-  @username_array.uniq
-end
-end
+def unique_users(usernames)
+  array = []
+  array << usernames
+  array.uniq
 end
 
 
