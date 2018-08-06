@@ -25,7 +25,7 @@
 
 <%username_array = []%>
 <%@post.comments.each do |comment|%>
-<%if !username_array.include(comment.user.username)%>
+<%if !username_array.include?(comment.user.username)%>
 <%username_array << comment.user.username%>
 <%username_array.each do |username|%>
 <%=link_to username, user_path(comment.user)%>
