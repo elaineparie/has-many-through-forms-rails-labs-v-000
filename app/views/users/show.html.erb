@@ -1,5 +1,4 @@
 
 <%@user.comments.each do |comment|%>
-<%=link_to comment.post.name, post_path(comment.post)%>
-<%binding.pry%>
+<%=link_to comment.post.title, post_path(comment.post)%>
 <%end%>
