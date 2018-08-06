@@ -26,6 +26,8 @@
 <%username_array = []%>
 <%@post.comments.each do |comment|%>
 <%username_array << comment.user.username%>
-<%username_array.uniq%>
+<%unique array = username_array.uniq%>
+<%unique_array.each do |username|%>
+<%=link_to username, user_path(comment.user)
 <%binding.pry%>
 <%end%>
