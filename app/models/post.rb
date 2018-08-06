@@ -13,10 +13,13 @@ class Post < ActiveRecord::Base
 end
 
 def unique_users
-  array = []
+  @array = []
 if !self.comments.empty?
 self.comments.each do |comment|
-array << comment.user
+@array << comment.user
+end
+array.each do |user|
+  user.username
 binding.pry
 end
 end
