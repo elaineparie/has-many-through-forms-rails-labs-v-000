@@ -21,6 +21,7 @@ self.comments.each do |comment|
 end
 @array.each do |user|
   @username_array << user.username
+  @username_array.uniq
 end
 end
 end
