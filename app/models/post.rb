@@ -20,7 +20,7 @@ self.comments.each do |comment|
 @array << comment.user
 end
 array.each do |user|
-  user.username
+  @username_array << user.username
 binding.pry
 end
 end
