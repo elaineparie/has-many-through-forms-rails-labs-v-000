@@ -14,9 +14,10 @@ end
 
 def unique_users
   binding.pry
+  array = []
 if !self.comments.empty?
 self.comments.map do |comment|
-comment.user.map do |user|
+comment.user
 user.username
 end
 end
