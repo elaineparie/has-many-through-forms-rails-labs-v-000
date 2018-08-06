@@ -21,7 +21,6 @@ self.comments.each do |comment|
 end
 @array.each do |user|
   @username_array << user.username
-binding.pry
 end
 end
 end
