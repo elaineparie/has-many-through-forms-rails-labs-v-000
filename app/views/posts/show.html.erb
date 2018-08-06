@@ -25,6 +25,8 @@
 
 <%username_array = []%>
 <%@post.comments.collect do |comment|%>
+<%if !comment.user.empty?%>
 <%username_array << comment.user.username%>
+<%username_array.uniq%>
 <%binding.pry%>
 <%end%>
