@@ -13,7 +13,6 @@ class Post < ActiveRecord::Base
 end
 
 def unique_users
-  binding.pry
   array = []
 if !self.comments.empty?
 self.comments.map do |comment|
