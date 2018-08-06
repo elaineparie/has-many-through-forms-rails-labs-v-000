@@ -22,3 +22,10 @@
 <%=comment.user.username%> says: <%=comment.content%>
 <%end%>
 <%end%>
+
+<%if !@post.comments.empty?%>
+<%@post.comments.map do |comment|%>
+<%comment.user.map do |user|%>
+<%user.username%>
+<%end%>
+<%end%>
