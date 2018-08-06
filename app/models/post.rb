@@ -13,11 +13,11 @@ class Post < ActiveRecord::Base
 end
 
 def unique_users
+  binding.pry
 if !self.comments.empty?
 self.comments.map do |comment|
 comment.user.map do |user|
 user.username
-binding.pry
 end
 end
 end
