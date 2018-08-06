@@ -12,11 +12,6 @@ class Post < ActiveRecord::Base
   end
 end
 
-def unique_users(usernames)
-  array = []
-  array << usernames
-  array.uniq
-end
 
 
 
